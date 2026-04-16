@@ -42,7 +42,7 @@ export default function Contact() {
             </h3>
             {[
               { label: 'Email', value: 'info@rivettmfg.com' },
-              { label: 'WhatsApp', value: '+92 XXX XXXXXXX' },
+              { label: 'WhatsApp', value: '+92 304 4480452' },
               { label: 'Instagram', value: '@rivettmfg' },
             ].map((d) => (
               <div key={d.label} className="flex gap-3 mb-3">

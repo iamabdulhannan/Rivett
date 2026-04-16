@@ -53,7 +53,7 @@ export default function Footer() {
             {[
               { label: 'Instagram', href: 'https://instagram.com/rivettmfg' },
               { label: 'LinkedIn', href: 'https://linkedin.com/company/rivettmfg' },
-              { label: 'WhatsApp', href: 'https://wa.me/92XXXXXXXXXX' },
+              { label: 'WhatsApp', href: 'https://wa.me/923044480452' },
             ].map((s) => (
               <a
                 key={s.label}

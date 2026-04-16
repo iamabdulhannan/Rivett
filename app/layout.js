@@ -47,6 +47,9 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.rivettmfg.com',
   },
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {

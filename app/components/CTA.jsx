@@ -54,7 +54,7 @@ export default function CTA() {
               Send Your Techpack
             </motion.a>
             <motion.a
-              href="https://wa.me/92XXXXXXXXXX"
+              href="https://wa.me/923044480452"
               target="_blank"
               rel="noopener"
               whileHover={{ scale: 1.05 }}
@@ -68,7 +68,7 @@ export default function CTA() {
           <div className="flex justify-center gap-12 flex-wrap">
             {[
               { label: 'Email', value: 'info@rivettmfg.com', href: 'mailto:info@rivettmfg.com' },
-              { label: 'WhatsApp', value: '+92 XXX XXXXXXX', href: 'https://wa.me/92XXXXXXXXXX' },
+              { label: 'WhatsApp', value: '+92 304 4480452', href: 'https://wa.me/923044480452' },
               { label: 'Instagram', value: '@rivettmfg', href: 'https://instagram.com/rivettmfg' },
             ].map((c) => (
               <div key={c.label} className="text-center">
