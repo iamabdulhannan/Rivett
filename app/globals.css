@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== GLOBAL STYLES ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+::selection {
+  background: #c8a45c;
+  color: #0a1628;
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1628;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8a45c;
+  border-radius: 4px;
+}
+
+/* ===== HERO DENIM TEXTURE ===== */
+.denim-bg {
+  background:
+    linear-gradient(135deg, rgba(10,22,40,0.92), rgba(38,64,112,0.85)),
+    repeating-linear-gradient(45deg, #2c4a7c 0px, #2c4a7c 1px, transparent 1px, transparent 5px),
+    repeating-linear-gradient(-45deg, #1e3a6a 0px, #1e3a6a 1px, transparent 1px, transparent 5px),
+    linear-gradient(180deg, #264070, #1a3060);
+}
+
+.denim-bg-dark {
+  background:
+    linear-gradient(135deg, rgba(10,22,40,0.95), rgba(38,64,112,0.9)),
+    repeating-linear-gradient(45deg, #2c4a7c 0px, #2c4a7c 1px, transparent 1px, transparent 5px),
+    linear-gradient(180deg, #264070, #1a3060);
+}
+
+/* ===== GOLDEN LINE ANIMATION ===== */
+.golden-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c8a45c, transparent);
+}
+
+/* ===== MAGNETIC BUTTON EFFECT ===== */
+.btn-magnetic {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* ===== TEXT GRADIENT ===== */
+.text-gradient {
+  background: linear-gradient(135deg, #c8a45c, #e8d48c, #c8a45c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== SHIMMER EFFECT ===== */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(200,164,92,0.1) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* ===== FLOATING ANIMATION ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== PULSE RING ===== */
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* ===== STITCH PATTERN ===== */
+.stitch-border {
+  border-image: repeating-linear-gradient(
+    90deg, #c8a45c 0px, #c8a45c 8px, transparent 8px, transparent 16px
+  ) 1;
+}
